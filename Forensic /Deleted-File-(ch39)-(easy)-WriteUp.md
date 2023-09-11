@@ -1,3 +1,7 @@
+
+
+### Terminal Logs
+```linux
 x47@LAPTOP-J6FFFBS9:~$ file usb.image
 usb.image: DOS/MBR boot sector, code offset 0x3c+2, OEM-ID "mkfs.fat", sectors/cluster 4, reserved sectors 4, root entries 512, sectors 63488 (volumes <=32 MB), Media descriptor 0xf8, sectors/FAT 64, sectors/track 62, heads 124, hidden sectors 2048, reserved 0x1, serial number 0xc7ecde5b, label: "USB        ", FAT (16 bit)
 x47@LAPTOP-J6FFFBS9:~$ fls -r usb.image
@@ -43,6 +47,8 @@ XMP Toolkit                     : Image::ExifTool 11.88
 Creator                         : Javier Turcot
 Image Size                      : 400x300
 Megapixels                      : 0.120
+
+```
 
 --> Creator: Javier Turcot
 --> Flag: javier_turcot
