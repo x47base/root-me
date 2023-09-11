@@ -1,7 +1,31 @@
-
+# Deleted File WriteUp
+1. Decompress the file as it was initialy compressed as tar & gzip.
+```
+x47@LAPTOP-J6FFFBS9:~$ gunzip ch39.gz
+x47@LAPTOP-J6FFFBS9:~$ tar -xvf ch39
+usb.image
+```
+2. Check the file type.
+```
+x47@LAPTOP-J6FFFBS9:~$ file usb.image
+usb.image: DOS/MBR boot sector, code offset 0x3c+2, OEM-ID "mkfs.fat", sectors/cluster 4, reserved sectors 4, root entries 512, sectors 63488 (volumes <=32 MB), Media descriptor 0xf8, sectors/FAT 64, sectors/track 62, heads 124, hidden sectors 2048, reserved 0x1, serial number 0xc7ecde5b, label: "USB        ", FAT (16 bit)
+```
+3. List the files. Deleted files are marked with a `*`.
+```
+x47@LAPTOP-J6FFFBS9:~$ fls -r usb.image
+r/r 3:  USB         (Volume Label Entry)
+r/r * 5:        anonyme.png
+v/v 1013699:    $MBR
+v/v 1013700:    $FAT1
+v/v 1013701:    $FAT2
+V/V 1013702:    $OrphanFiles
+```
 
 ### Terminal Logs
-```linux
+```Ubuntu
+x47@LAPTOP-J6FFFBS9:~$ gunzip ch39.gz
+x47@LAPTOP-J6FFFBS9:~$ tar -xvf ch39
+usb.image
 x47@LAPTOP-J6FFFBS9:~$ file usb.image
 usb.image: DOS/MBR boot sector, code offset 0x3c+2, OEM-ID "mkfs.fat", sectors/cluster 4, reserved sectors 4, root entries 512, sectors 63488 (volumes <=32 MB), Media descriptor 0xf8, sectors/FAT 64, sectors/track 62, heads 124, hidden sectors 2048, reserved 0x1, serial number 0xc7ecde5b, label: "USB        ", FAT (16 bit)
 x47@LAPTOP-J6FFFBS9:~$ fls -r usb.image
